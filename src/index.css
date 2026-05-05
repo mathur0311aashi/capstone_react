@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Global resets and base styles */
+/* Note: Tailwind's Preflight already handles margin/padding resets, 
+   but keeping your font and color preferences here */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #111111;
+  background-color: #FFFFFF;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E6E8EC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg,
+        #F8F9FB 0%,
+        #E6E8EC 50%,
+        #F8F9FB 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .focus-ring {
+    outline: 2px solid #0E7C66;
+    outline-offset: 2px;
+  }
+
+  .page-transition {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #0E7C66;
+  outline-offset: 2px;
+}
+
+/* Button reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Input reset */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Link reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
