@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { validateTripForm } from '../utils/helpers';
+import { validateTripForm } from '../utils/Helpers';
 
 /**
  * InputForm Page

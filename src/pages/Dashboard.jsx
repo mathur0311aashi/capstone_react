@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { loadCurrentTrip, formatDate } from '../utils/helpers';
+import { loadCurrentTrip, formatDate } from '../utils/Helpers';
 import TravelCard from '../components/TravelCard';
 
 /**

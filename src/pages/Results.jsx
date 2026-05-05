@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
-import { generateTravelPlan } from '../services/geminiService';
-import { copyToClipboard, formatItinerary, saveTripToStorage } from '../utils/helpers';
+import { generateTravelPlan } from '../services/GeminiService';
+import { copyToClipboard, formatItinerary, saveTripToStorage } from '../utils/Helpers';
 import { SpinnerLoader, SkeletonResults } from '../components/Loader';
 import TravelCard from '../components/TravelCard';
 import VideoSection from '../components/VideoSection';
